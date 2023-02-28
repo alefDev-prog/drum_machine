@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#drum-machine {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+#display {
+  position: relative;
+  width: 258px;
+  text-align: center;
+  background-color: #838882;
+  padding: 5px;
+  box-shadow: 4px 4px 2px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#buttons {
+  display: inline-block;
+  width: 258px;
+  height: 258px;
+  background-color: #838882;
+  
 }
+
+.drum-pad{
+  
+  background-color: aqua;
+  position:relative;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 3px;
+  border-radius: 5px;
+  padding: 10%;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-pad:active{
+  background-color: #63A3B4; /* change the background color when clicked */
+  box-shadow: inset 0px 2px 5px rgba(0,0,0,0.5); /* add a shadow effect */
+}
+
+
+#sound-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50px;
+  width:258px;
+  background-color: #838882;
+}
+
+#sound-box{
+  
+  width: 100px;
+  height:20px;
+  padding: 5px;
+  background-color: aliceblue;
+  box-shadow: 3px 3px 2px black;
+}
+
